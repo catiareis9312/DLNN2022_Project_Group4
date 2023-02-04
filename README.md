@@ -20,6 +20,7 @@ The folder 'Data' can be split into 3 categories:
 1.2 compiled_dataset folder
 
 The three original datasets were compailed all together and spread across distinct directories, one for each emotion (“surprise”, “sadness", “happy”, “fear”, "disgust”, “anger” and “neutral”). Initialy, there was a "contempt" subfolder but given the lack of representativity of the contempt images, it was decided to remove them from the dataset, and from the list of classification labels. 
+
 1.3 Input folder. This folder considers 4 subfolders, which have the pictures split according to the respective emotion:
 - TRAIN: training dataset
 - VALIDATION: validation dataset
