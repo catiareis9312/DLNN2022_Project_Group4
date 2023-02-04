@@ -30,10 +30,10 @@ The three original datasets were compailed all together and spread across distin
 2. Script
 
 The script used is labeled DLNN_Project_group4.ipynb. Please take the following into consideration:
-- The subsections "CK+48", "JAFFE", "SFEW", "Compiled dataset", "Train, Validation and Test datasets", "Balance Train dataset: image data augmentation" within "Data Preparation" section don't need to be run, since the pre-processing outputs are already displayed in folders scheme described above.
-- In the subsections mentioned above we commented the "save" statements in order to not overlap our data.
+- The subsections "CK+48", "JAFFE", "SFEW", "Compiled dataset", "Train, Validation and Test datasets", "Balance Train dataset: image data augmentation" within "Data Preparation" section don't need to be ran, since the pre-processing outputs are already displayed in folders scheme described above.
+- In the subsections mentioned above we commented the "save" statements in order not to overlap our data.
 - Since the datasets had some noisy pictures, we manually deleted them from the SFEW directory.
-- Before creating any instace of model we certified that this instance did not exist in order to try to avoid retraining the models. To do this used the following lines of code (example): 
+- Before creating any instance of model we certified that this instance did not exist in order to try to avoid retraining the models. To do this it is used the following lines of code (example): 
 del_var = 'cnn61'
 if del_var in globals(): globals().pop(del_var, None).
 - In what regards to the tensorboard, we used it to visualize and assess the models during the training process. It enabled us to monitor key metrics such as F1-score, AUROC, and accuracy and make decisions on how to optimize and improve models’ performance. We commented all the 'callbacks' parameters within the fit function along the script, except for the 'final' models, which were CNN-51 with 20 epochs and a 64 batch-size and the transfer learning model that used the CNN-51 classifier architecture with a 128 batch-size.
