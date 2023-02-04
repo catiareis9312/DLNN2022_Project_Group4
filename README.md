@@ -4,7 +4,7 @@
 #### Benedita Pereira, 20211752, Cátia Reis, 20211749, Gil Marinho, 20211785, Maria do Carmo Sousa, 20211813
 
 
-The aim of this work is to develop a deep learning model for predicting facial emotions. The approach was to use Convolutional Neural Network (CNN) models. Techniques such as normalization and regularization were assessed. The results show that the best model has an F1-score of 0.50, and regularization techniques did not result in a reduction of overfitting. Furthermore, transfer learning was applied, but no improvement in results were observed. We considered that the dataset used might not be the best to obtain an efficient model for predicting facial emotions.
+In this project a deep learning model for classifying facial expressions is developed, using Convolutional Neural Network (CNN) models. Techniques such as normalization and regularization were assessed. The results show that the best model has an F1-score of 0.50, and regularization techniques did not result in a reduction of overfitting. Furthermore, transfer learning was applied, but no improvement in results was observed. We considered that the dataset used might not be the best to obtain an efficient model for recognizing facial emotions.
 
 ## Datasets and script information
 1. Datasets
@@ -28,7 +28,8 @@ The three original datasets were compailed all together and spread across distin
 - TRAIN_augmentation: new balanced train dataset with artificially created images and an even number of images by emotion
 
 2. Script
-The script used is labeled DLNN_Project_group4.ipynb. There are some considerations we would like you to consider:
+
+The script used is labeled DLNN_Project_group4.ipynb. Please take the following into consideration:
 - The subsections "CK+48", "JAFFE", "SFEW", "Compiled dataset", "Train, Validation and Test datasets", "Balance Train dataset: image data augmentation" within "Data Preparation" section don't need to be run, since the pre-processing outputs are already displayed in folders scheme described above.
 - In the subsections mentioned above we commented the "save" statements in order to not overlap our data.
 - Since the datasets had some noisy pictures, we manually deleted them from the SFEW directory.
