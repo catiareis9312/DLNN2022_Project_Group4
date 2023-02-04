@@ -6,20 +6,20 @@
 
 The aim of this work is to develop a deep learning model for predicting facial emotions. The approach was to use Convolutional Neural Network (CNN) models. Techniques such as normalization and regularization were assessed. The results show that the best model has an F1-score of 0.50, and regularization techniques did not result in a reduction of overfitting. Furthermore, transfer learning was applied, but no improvement in results were observed. We considered that the dataset used might not be the best to obtain an efficient model for predicting facial emotions.
 
-## How to run the programm
+## Datasets and script information
 1. Datasets
 
-The folder data can be splitted into 3 categories: 
+The folder 'Data' can be split into 3 categories: 
 
-1.1 Original datasets which inside have subfolders with the pictures distributed according to the emotion they represent. These datasets are the following: 
+1.1 Original datasets
 
-- CK+48: This dataset has sequencies of images completely identical.
-- JAFFE: This dataset has sequences of photographs of the same subject, undergoing different emotions, and distinct levels of display intensity of those emotions.
-- SFEW: This dataset has some images where no human face is recognizable, has is made evident on the following image.
+- CK+48: Inside this folder there are subfolders with the pictures distributed according to the emotion they represent.
+- JAFFE: Inside this folder there are i) 'jaffedbase' folder with 213 pictures and an excel file named 'jaffedbase_readme.xlsx' which is imported during the preprocessment.
+- SFEW: dataset in the form a pickle file - 'SFEW.pckl'.
 
 1.2 compiled_dataset folder
 
-The three datasets containing only the selected images were then compiled all together and spread across distinct directories, one for each emotion, adding up to 233 images labeled as “surprise”, 252 labeled as “sadness”, 315 as “happy”, 156 as “fear”, 141 as “disgust”, 293 as “anger”, 18 as “contempt” and 232 as “neutral”. Given the lack of representativity of the contempt images, it was decided to remove them from the dataset, and from the list of classification labels. The previous process resulted in a final dataset with 1622 images.
+The three original datasets were compailed all together and spread across distinct directories, one for each emotion (“surprise”, “sadness", “happy”, “fear”, "disgust”, “anger” and “neutral”). Initialy, there was a "contempt" subfolder but given the lack of representativity of the contempt images, it was decided to remove them from the dataset, and from the list of classification labels. 
 1.3 Input folder. This folder considers 4 subfolders, which have the pictures split according to the respective emotion:
 - TRAIN: training dataset
 - VALIDATION: validation dataset
